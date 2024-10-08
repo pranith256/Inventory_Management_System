@@ -68,7 +68,7 @@ const UpdateModel = ({ visible ,setVisible,_id}:any) => {
           <Dialog draggable={false} visible={visible} className=' w-[90%] mx-auto lg:mx-0 lg:w-1/2' onHide={() => setVisible(false)}>
 
               <Formik onSubmit={onSubmitHandler} initialValues={initialValues} validationSchema={validationSchema}>
-                  {({ values, setFieldValue, handleSubmit }) => (
+                  {({ handleSubmit }) => (
                       <>
                           <form onSubmit={handleSubmit} className="w-full" >
                               <div className="mb-3">

@@ -50,7 +50,7 @@ toast.error(e.message)
         <Dialog draggable={false} header="Add Item" position='top' visible={visible} className=" w-full md:w-[70%] lg:w-1/2" onHide={() => setVisible(false)}>
          
         <Formik onSubmit={onSubmitHandler} initialValues={initialValues} validationSchema={validationSchema}>
-            {({values,setFieldValue,handleSubmit})=>(
+            {({handleSubmit})=>(
               <>  
                      <form onSubmit={handleSubmit} className="w-full" >
                    <div className="mb-3">

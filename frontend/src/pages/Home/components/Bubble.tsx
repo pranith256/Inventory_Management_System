@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -23,7 +23,7 @@ ChartJS.register(
 );
 
 // LineChart component
-const LineChart = ({ data, width = 600, height = 400 }: { data: any[], width?: number, height?: number }) => {
+const LineChart = ({ data }: { data: any[], width?: number, height?: number }) => {
   // Prepare data for the chart
   const chartData = {
     labels: data.map(item => item.name), // X-axis (Item Names)
