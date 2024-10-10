@@ -151,7 +151,7 @@ const AddOrderModel = ({ visible, setVisible }: any) => {
 
                                           
                               <div className="flex justify-end">
-                                  <Button  className="text-white px-5 rounded-sm bg-indigo-500 py-3 text-center ">Add Consumer</Button>
+                                  <Button  className="text-white px-5 rounded-sm bg-indigo-500 py-3 text-center ">Add Order</Button>
                               </div>
 
                           </form>
